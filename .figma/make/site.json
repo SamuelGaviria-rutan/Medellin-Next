@@ -1,0 +1,11 @@
+{
+  "title": "Medellín Next",
+  "description": "This landing page showcases key information with engaging visuals, multiple call-to-actions, and dynamic carousels, designed to attract and inform potential clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

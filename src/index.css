@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Ruta N palette */
+  --color-rn-green-dark: #253D36;
+  --color-rn-green: #C0D400;
+  --color-rn-aqua: #00B8A3;
+  --color-rn-blue: #0068FF;
+  --color-rn-yellow: #FFCA00;
+  --color-rn-red-orange: #FF4C17;
+
+  /* Neutrals */
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-ink2: #333333;
+  --color-border: #E6E6E6;
+  --color-soft: #F5F6F7;
+  --color-primary: #253D36;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #F5F6F7;
+  --color-muted-foreground: #555555;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+  display: flex;
+  width: max-content;
+}
+.animate-marquee-reverse {
+  animation: marquee 45s linear infinite reverse;
+  display: flex;
+  width: max-content;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
